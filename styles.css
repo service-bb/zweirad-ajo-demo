@@ -156,6 +156,36 @@ p {
   display: none;
 }
 
+.demo-tag {
+  display: inline-block;
+  margin-left: 0.4em;
+  color: #ff0000;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.brand-mark .demo-tag,
+.hero-brand .demo-tag {
+  font-size: 0.45em;
+  vertical-align: super;
+  margin-left: 0.35em;
+}
+
+h1 .demo-tag,
+h2 .demo-tag {
+  font-size: 0.55em;
+  vertical-align: super;
+}
+
+h3 .demo-tag {
+  font-size: 0.65em;
+  vertical-align: super;
+}
+
 .hero-demo-label {
   display: inline-block;
   margin-bottom: 0.65rem;
