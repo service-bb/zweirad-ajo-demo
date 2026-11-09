@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design-Demo (inoffiziell) — Zweirad AjO</title>
+  <meta name="description" content="Inoffizieller Design-Vorschlag / Demo — keine offizielle Website der Zweirad AjO GmbH. Nur zur Illustration einer möglichen Neugestaltung.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <div class="demo-banner" role="note" aria-label="Hinweis: Design-Demo">
+    <p class="demo-banner-title">Design-Demo / Vorschlag — keine offizielle Website der Zweirad AjO GmbH</p>
+    <p class="demo-banner-sub">Inhalte und Fotos nur zur Illustration. Offizielle Website: <a href="https://www.zweirad-ajo.de/" target="_blank" rel="noopener noreferrer">zweirad-ajo.de</a></p>
+  </div>
+
+  <div class="demo-toast" id="demo-toast" role="status" aria-live="polite" hidden></div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Zweirad AjO Demo Start">
+        <span class="brand-mark">Zweirad AjO</span>
+        <span class="brand-sub">Demo · seit 1993</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="#fahrzeuge">Fahrzeuge</a>
+        <a href="#werkstatt">Werkstatt</a>
+        <a href="#haendler">Händler</a>
+        <a href="#team">Team</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <button type="button" class="header-phone demo-contact" data-demo-action="call" onclick="window.showDemoNotice && window.showDemoNotice('call')">0203&nbsp;471286</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-brand">
+      <div class="hero-media">
+        <img src="assets/hero-storefront.jpg" alt="Luxxon Roller vor dem Laden von Zweirad AjO in Duisburg" width="2048" height="1536" fetchpriority="high">
+      </div>
+      <div class="hero-scrim"></div>
+      <div class="hero-content">
+        <p class="hero-demo-label">Design-Vorschlag (Demo)</p>
+        <p class="hero-brand" id="hero-brand">Zweirad AjO</p>
+        <h1>Fachhändler &amp; Meisterwerkstatt in Duisburg</h1>
+        <p class="hero-lead">Motorroller, Leichtkrafträder und Motorräder — kompetent beraten, fachgerecht gewartet. Seit 1993 in Duisburg-Walsum.</p>
+        <div class="hero-actions">
+          <button type="button" class="btn btn-primary demo-contact" data-demo-action="call" onclick="window.showDemoNotice && window.showDemoNotice('call')">Jetzt anrufen</button>
+          <a class="btn btn-ghost" href="#fahrzeuge">Fahrzeuge ansehen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vehicles" id="fahrzeuge" aria-labelledby="vehicles-title">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="eyebrow">Neu &amp; aktuell</p>
+          <h2 id="vehicles-title">Fahrzeuge</h2>
+          <p class="section-lead">Auswahl aus unserem Sortiment — QJ Motor und SYM, viele Modelle mit 3 Jahren Garantie.</p>
+        </header>
+
+        <div class="vehicle-grid">
+          <article class="vehicle reveal">
+            <div class="vehicle-media">
+              <img src="assets/qj-srk-125s.jpg" alt="QJ Motor SRK 125 S" loading="lazy" width="2048" height="1366">
+            </div>
+            <div class="vehicle-body">
+              <p class="vehicle-brand">QJ Motor</p>
+              <h3>SRK 125 S</h3>
+              <p class="vehicle-meta">Euro 5+ · 3 Jahre Garantie</p>
+              <p class="vehicle-price">3.199&nbsp;€</p>
+            </div>
+          </article>
+
+          <article class="vehicle reveal">
+            <div class="vehicle-media">
+              <img src="assets/qj-srk-125r.jpg" alt="QJ Motor SRK 125 R" loading="lazy" width="2048" height="1366">
+            </div>
+            <div class="vehicle-body">
+              <p class="vehicle-brand">QJ Motor</p>
+              <h3>SRK 125 R</h3>
+              <p class="vehicle-meta">Euro 5+ · Sportliches Naked</p>
+              <p class="vehicle-price">3.999&nbsp;€</p>
+            </div>
+          </article>
+
+          <article class="vehicle reveal">
+            <div class="vehicle-media">
+              <img src="assets/sym-maxsym-gt.jpg" alt="SYM Maxsym GT 400i" loading="lazy" width="800" height="600">
+            </div>
+            <div class="vehicle-body">
+              <p class="vehicle-brand">SYM</p>
+              <h3>Maxsym GT 400i</h3>
+              <p class="vehicle-meta">Maxi-Scooter · zzgl. Liefernebenkosten</p>
+              <p class="vehicle-price">6.399&nbsp;€</p>
+            </div>
+          </article>
+
+          <article class="vehicle reveal">
+            <div class="vehicle-media">
+              <img src="assets/sym-adx-adventure.jpg" alt="SYM ADX Adventure Scooter" loading="lazy" width="1200" height="800">
+            </div>
+            <div class="vehicle-body">
+              <p class="vehicle-brand">SYM</p>
+              <h3>ADX 125i</h3>
+              <p class="vehicle-meta">Adventure · zzgl. Liefernebenkosten</p>
+              <p class="vehicle-price">3.999&nbsp;€</p>
+            </div>
+          </article>
+
+          <article class="vehicle reveal">
+            <div class="vehicle-media">
+              <img src="assets/qj-srv-125.jpg" alt="QJ Motor SRV 125" loading="lazy" width="800" height="600">
+            </div>
+            <div class="vehicle-body">
+              <p class="vehicle-brand">QJ Motor</p>
+              <h3>SRV 125</h3>
+              <p class="vehicle-meta">Euro 5+ · Neo-Retro Cruiser</p>
+              <p class="vehicle-price">3.199&nbsp;€</p>
+            </div>
+          </article>
+
+          <article class="vehicle reveal">
+            <div class="vehicle-media">
+              <img src="assets/qj-ltr-50.jpg" alt="QJ Motor LTR 50" loading="lazy" width="800" height="600">
+            </div>
+            <div class="vehicle-body">
+              <p class="vehicle-brand">QJ Motor</p>
+              <h3>LTR 50</h3>
+              <p class="vehicle-meta">Euro 5+ · in 4 Farben</p>
+              <p class="vehicle-price">2.099&nbsp;€</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="vehicles-note reveal">Preise zzgl. Überführung wo angegeben. Finanzierung ohne Anzahlung über Easy Credit möglich. Fragen Sie uns — wir beraten Sie persönlich.</p>
+      </div>
+    </section>
+
+    <section class="section workshop" id="werkstatt" aria-labelledby="workshop-title">
+      <div class="section-inner workshop-layout">
+        <div class="workshop-copy reveal">
+          <header class="section-head">
+            <p class="eyebrow">Meisterbetrieb</p>
+            <h2 id="workshop-title">Ihre Fachwerkstatt</h2>
+            <p class="section-lead">Erfahrung und Kompetenz seit 1993 — Reparatur und Service für Motorräder und Roller aller Art.</p>
+          </header>
+
+          <ul class="service-list">
+            <li>Reparaturen von Zweirädern aller Art (Motorräder, Roller)</li>
+            <li>DEKRA-Stützpunkt (HU / AU / Sonderabnahmen)</li>
+            <li>Leistungsreduzierung / -steigerung mit Gutachten</li>
+            <li>Reifenmontage</li>
+            <li>Unfallinstandsetzung</li>
+            <li>Abholservice (kostenpflichtig)</li>
+            <li>Endoskopische Untersuchung</li>
+          </ul>
+
+          <button type="button" class="btn btn-primary demo-contact" data-demo-action="call" onclick="window.showDemoNotice && window.showDemoNotice('call')">Termin vereinbaren</button>
+        </div>
+
+        <figure class="workshop-figure reveal">
+          <img src="assets/feature-storage.jpg" alt="Unter-Sitz-Stauraum eines modernen Rollers mit zwei Helmen" loading="lazy" width="1200" height="900">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section dealers" id="haendler" aria-labelledby="dealers-title">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="eyebrow">Vertragshändler</p>
+          <h2 id="dealers-title">Luxxon · SYM · QJ Motor</h2>
+          <p class="section-lead">Offizielle Markenpartnerschaften und Ersatzteile für viele weitere Hersteller.</p>
+        </header>
+
+        <div class="dealer-strip reveal" role="list">
+          <span role="listitem">Luxxon</span>
+          <span role="listitem">SYM</span>
+          <span role="listitem">QJ Motor</span>
+        </div>
+
+        <div class="dealer-extras reveal">
+          <p><strong>Ersatzteile</strong> für Yamaha, Aprilia, Derbi, Daelim, Motowell, Kymco, Peugeot, SWM, Beeline und mehr — oft sofort verfügbar.</p>
+          <p><strong>Finanzierung</strong> für Neufahrzeuge ohne Anzahlung über Easy Credit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team" id="team" aria-labelledby="team-title">
+      <div class="section-inner team-layout">
+        <header class="section-head reveal">
+          <p class="eyebrow">Persönlich</p>
+          <h2 id="team-title">Tina &amp; Jörg Schüler</h2>
+          <p class="section-lead">Seit 1993 in Duisburg-Walsum — wir beraten Sie gerne rund ums Zweirad.</p>
+        </header>
+
+        <div class="team-story reveal">
+          <p>Jörg Schüler absolvierte seine Ausbildung bei Yamaha Dannies in Dinslaken und legte 1993 seinen Meisterbrief bei der Handwerkskammer Düsseldorf ab. Regelmäßige Fortbildungen halten Werkstatt und Beratung auf dem neuesten Stand.</p>
+          <p>Tina Schüler ist seit ihrer Ausbildung im Einzelhandel Zweirad tätig und kennt die Branche von Grund auf — von aktuellen Trends bis zu Zubehör und Ersatzteilen.</p>
+          <p class="team-signoff">Wir freuen uns auf Ihren Besuch.<br><strong>Ihr Zweirad AjO-Team</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontakt" aria-labelledby="contact-title">
+      <div class="section-inner contact-layout">
+        <div class="contact-info reveal">
+          <header class="section-head">
+            <p class="eyebrow">Besuchen Sie uns</p>
+            <h2 id="contact-title">Kontakt &amp; Öffnungszeiten</h2>
+          </header>
+
+          <address class="contact-address">
+            <strong>Zweirad AjO GmbH</strong><br>
+            Friedrich-Ebert-Straße 458<br>
+            47178 Duisburg
+          </address>
+
+          <ul class="contact-links">
+            <li><button type="button" class="contact-link-btn demo-contact" data-demo-action="call" onclick="window.showDemoNotice && window.showDemoNotice('call')">0203 471286</button></li>
+            <li><button type="button" class="contact-link-btn demo-contact" data-demo-action="email" onclick="window.showDemoNotice && window.showDemoNotice('email')">info@zweirad-ajo.de</button></li>
+            <li>
+              <a href="https://www.zweirad-ajo.de/" target="_blank" rel="noopener noreferrer">Offizielle Website</a>
+            </li>
+          </ul>
+          <p class="contact-demo-note">Telefon und E-Mail sind hier nur als Design-Beispiel gezeigt — in dieser Demo wird niemand angerufen oder angeschrieben.</p>
+
+          <dl class="hours">
+            <div>
+              <dt>Montag</dt>
+              <dd>geschlossen</dd>
+            </div>
+            <div>
+              <dt>Dienstag – Freitag</dt>
+              <dd>09:00 – 13:00 · 14:30 – 18:00</dd>
+            </div>
+            <div>
+              <dt>Samstag</dt>
+              <dd>09:00 – 12:00</dd>
+            </div>
+            <div>
+              <dt>Sonntag</dt>
+              <dd>geschlossen</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <h3>Nachricht senden</h3>
+          <p class="form-note">Reines Demo-Formular: es wird nichts gespeichert, nichts versendet und keine E-Mail an den Betrieb geöffnet.</p>
+
+          <label>
+            Name *
+            <input type="text" name="name" required autocomplete="name" placeholder="Ihr Name">
+          </label>
+
+          <label>
+            E-Mail *
+            <input type="email" name="email" required autocomplete="email" placeholder="name@beispiel.de">
+          </label>
+
+          <label>
+            Nachricht *
+            <textarea name="message" required rows="5" placeholder="Wobei können wir helfen?"></textarea>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Absenden</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">Zweirad AjO</span>
+        <p>Design-Demo · keine offizielle Website</p>
+      </div>
+      <div class="footer-disclaimer">
+        <p><strong>Hinweis:</strong> Dies ist ein inoffizieller Design-Vorschlag / eine Demo und kein offizieller Webauftritt der Zweirad AjO GmbH. Es besteht kein Impressum, keine Datenschutzerklärung und keine AGB auf dieser Seite, weil hier kein reales Angebot betrieben wird.</p>
+        <p>Offizielle Informationen finden Sie auf der echten Website: <a href="https://www.zweirad-ajo.de/" target="_blank" rel="noopener noreferrer">www.zweirad-ajo.de</a></p>
+      </div>
+      <p class="demo-badge">Demo-Vorschlag — keine offizielle Website</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=demo5"></script>
+</body>
+</html>
